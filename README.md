@@ -21,6 +21,14 @@ The **Cloud-Based Incident Management System** is a web-based application design
 - **Cloud**: AWS Lambda, S3, EC2
 - **Version Control**: Git, GitHub
 
+### **AI Technologies**:
+- **Machine Learning**: Predictive analytics for incident severity and response time.
+- **TensorFlow.js**: For deploying and running machine learning models directly in the browser or Node.js, useful for text and image analysis.
+- **OpenCV**: Open-source computer vision library for image and video analysis to detect patterns or objects, such as intruders or unauthorized items.
+- **Hugging Face Transformers**: Pre-trained models for natural language processing (NLP) to automatically categorize incident reports or extract key information from text.
+- **spaCy**: NLP library for text analysis, entity extraction, and classification.
+- **AWS SageMaker**: Managed service to build, train, and deploy machine learning models at scale.
+
 ## Getting Started
 
 1. Clone the repository:
@@ -45,7 +53,6 @@ Comming soon
 - Email: mabunda.wealth@gmail.com
 - LinkedIn: Mfumu Wealth Mabunda
 - GitHub: TheOptimisticDev
-
 
 ## Contributing
 
