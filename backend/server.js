@@ -1,22 +1,23 @@
+// server.js (Express backend)
 const express = require('express');
+const cors = require('cors'); // Allow cross-origin requests
 const app = express();
-const port = 3000;
+const port = 5000;
 
-// Middleware to parse JSON requests
+app.use(cors());
 app.use(express.json());
 
-// Basic route
+// Handle the root route ("/") if you want to serve a basic message
 app.get('/', (req, res) => {
-  res.send('Hello!');
+  res.send('Welcome to the Express API!');
 });
 
-// Example route with a parameter
-app.get('/items/:id', (req, res) => {
+// API route to get item details by ID
+app.get('/api/items/:id', (req, res) => {
   const itemId = req.params.id;
-  res.json({ itemId: itemId });
+  res.json({ itemId: itemId, name: `Item ${itemId}` });
 });
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
