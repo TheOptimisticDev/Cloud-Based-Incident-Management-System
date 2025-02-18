@@ -126,3 +126,59 @@
     background: #f4f6f9;
   }
   
+  .welcome-message {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #1b1818;
+  }
+  
+  
+  /* Incident Overview Section */
+  .dashboard-overview h3 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .dashboard-overview p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .incident-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .incident-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .incident-item strong {
+    font-weight: bold;
+  }
+  
+  /* Notifications Section */
+  .notifications, .pending-actions {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications h3, .pending-actions h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .notifications p, .pending-actions p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

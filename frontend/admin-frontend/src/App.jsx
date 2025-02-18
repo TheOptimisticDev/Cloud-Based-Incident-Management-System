@@ -21,6 +21,7 @@ function App() {
         <Route path="analytics" element={<Analytics />} />
         <Route path="settings" element={<Settings />} />
         <Route path="support" element={<Support />} />
+        <Route path="Login" element={<Login />} />
       </Route>
     </Routes>
   );

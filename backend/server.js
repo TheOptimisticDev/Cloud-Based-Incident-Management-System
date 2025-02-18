@@ -1,23 +1,21 @@
-// server.js (Express backend)
-const express = require('express');
-const cors = require('cors'); // Allow cross-origin requests
-const app = express();
-const port = 5000;
+const express = require("express");
+const cors = require("cors");
 
+const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Handle the root route ("/") if you want to serve a basic message
-app.get('/', (req, res) => {
-  res.send('Welcome to the Express API!');
+const incidents = [
+  { id: 1, description: "Unauthorized access detected" },
+  { id: 2, description: "Camera offline in Zone 3" },
+];
+
+// Define API routes
+app.get("/api/incidents", (req, res) => {
+  res.json(incidents);
 });
 
-// API route to get item details by ID
-app.get('/api/items/:id', (req, res) => {
-  const itemId = req.params.id;
-  res.json({ itemId: itemId, name: `Item ${itemId}` });
-});
-
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
