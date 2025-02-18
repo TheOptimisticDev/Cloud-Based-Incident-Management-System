@@ -24,7 +24,7 @@ const Layout = ({ user, handleSignOut }) => {
           {/* Profile Section with User Login/SignOut Logic */}
           {user ? (
             <>
-              <span className="profile-name">Hello, {user.name}</span>
+              <span className="profile-name">{user.name}</span>
               <button onClick={handleSignOut}>Sign Out</button>
             </>
           ) : (
